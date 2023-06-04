@@ -35,7 +35,7 @@ export default function NavBar() {
 
    return (
     <Navbar expand="lg" text-light className={scrolled ? "scrolled" : "" } >
-      <Container>
+      <Container className="py-3">
         <Navbar.Brand href="#home"></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -45,8 +45,8 @@ export default function NavBar() {
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdatedLink('projects')}>Projects</Nav.Link>
           </Nav>
 
-          <span className="navbar-text">
-              <div className="social-icon d-flex g-4">
+          <span className="navbar-text ">
+              <div className="social-icon g-4">
                 <a href="#"><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={twitterLogo}  alt="" className="twitter-logo"/></a>
                 <a href="#"><img src={navIcon3}  alt="" /></a>

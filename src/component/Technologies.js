@@ -40,7 +40,7 @@ export const Technologies = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Technologies Stacks</h2>
+                        <h2>Technology Stacks</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={htmlIcon} alt="Image" />
