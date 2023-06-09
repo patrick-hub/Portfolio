@@ -51,7 +51,7 @@ export default function NavBar() {
                 <a href="https://twitter.com/PAkuagwu"><img src={twitterLogo}  alt="" className="twitter-logo"/></a>
                 <a href="#"><img src={navIcon3}  alt="" /></a>
               </div>
-              <button className="connect-button" onClick={() => {}}><a href="https://wa.me/+2348179169550">Let's Connect</a></button>
+              <button className="connect-button"><a href="https://wa.me/+2348179169550">Let's Connect</a></button>
             </span>
         </Navbar.Collapse>
       </Container>
