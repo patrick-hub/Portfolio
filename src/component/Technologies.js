@@ -40,31 +40,31 @@ export const Technologies = () => {
                         <h2>Technology Stacks</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={htmlIcon} alt="Image" />
+                                <img src={htmlIcon} alt="html-icon" />
                             </div>
                             <div className="item">
-                                <img src={css3Icon} alt="Image" />
+                                <img src={css3Icon} alt="css-icon" />
                             </div>
                             <div className="item">
-                                <img src={jsIcon} alt="Image" />
+                                <img src={jsIcon} alt="js-icon" />
                             </div>
                             <div className="item">
-                                <img src={typescriptIcon} alt="Image" />
+                                <img src={typescriptIcon} alt="type-icon" />
                             </div>
                             <div className="item">
-                                <img src={reactIcon} alt="Image" />
+                                <img src={reactIcon} alt="react-icon" />
                             </div>
                             <div className="item">
-                                <img src={nextjsIcon} alt="Image" />
+                                <img src={nextjsIcon} alt="next-icon" />
                             </div>
                             <div className="item">
-                                <img src={gitIcon} alt="Image" />
+                                <img src={gitIcon} alt="git-icon" />
                             </div>
                             <div className="item">
-                                <img src={slackIcon} alt="Image" />
+                                <img src={slackIcon} alt="slack-icon" />
                             </div>
                             <div className="item">
-                                <img src={webflowIcon} alt="Image" />
+                                <img src={webflowIcon} alt="webflow-icon" />
                             </div>
                         </Carousel>
                     </div>

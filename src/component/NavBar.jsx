@@ -49,7 +49,7 @@ export default function NavBar() {
               <div className="social-icon g-4">
                 <a href="https://www.linkedin.com/in/patrick-akuagwu"><img src={navIcon1} alt="" /></a>
                 <a href="https://twitter.com/PAkuagwu"><img src={twitterLogo}  alt="" className="twitter-logo"/></a>
-                <a href="#"><img src={navIcon3}  alt="" /></a>
+                <a href="https://www.instagram.com/arric_official/"><img src={navIcon3}  alt="" /></a>
               </div>
               <button className="connect-button"><a href="https://wa.me/+2348179169550">Let's Connect</a></button>
             </span>

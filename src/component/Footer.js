@@ -16,7 +16,7 @@ export const Footer = () => {
 								<a href="https://twitter.com/PAkuagwu">
 									<img src={twitterLogo} alt="" className="twitter-logo" />
 								</a>
-								<a href="#">
+								<a href="https://www.instagram.com/arric_official/">
 									<img src={navIcon3} alt="" />
 								</a>
 							</div>

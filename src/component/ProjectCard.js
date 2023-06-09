@@ -14,7 +14,7 @@ return (
       
     </div>
     <div className="project-btn">
-    <button type="" className="mx-3 mb-4"><a href="">Github</a></button>
+    <button type="" className="mx-3 mb-4"><a href={githubLink}>Github</a></button>
     <button type=""> <a href={liveDemo}>Live Demo</a></button> 
     </div>
     </Col>
