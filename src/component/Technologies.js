@@ -8,15 +8,12 @@ import reactIcon from "../assets/img/react.e7574af2.svg";
 import css3Icon from "../assets/img/css3.3ec32022.svg";
 import webflowIcon from "../assets/img/webflow-svgrepo-com.svg";
 import nextjsIcon from "../assets/img/nextjs-icon-svgrepo-com.svg";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import slackIcon from "../assets/img/slack-icon-svgrepo-com.svg"
 
 
 export const Technologies = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
