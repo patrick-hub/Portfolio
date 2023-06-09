@@ -11,18 +11,25 @@ export const Projects = () => {
     const projects = [
         {
           title: "Recipe Menu App",
-          description: "lorem 10",
           imgUrl: project1,
+          liveDemo: "https://recipee-menu-app.netlify.app/",
+          githubLink: "https://github.com/patrick-hub/forkify-recipe-menu-app"
+          
         },
         {
           title: "Menu Item Selector",
           description: "",
           imgUrl: project2,
+          liveDemo: "https://menu-selector.netlify.app/",
+          githubLink: "https://github.com/patrick-hub/MenuItem_Selector"
         },
         {
             title: "Finance Tracker App",
             description: "",
             imgUrl: project3,
+            liveDemo: "https://finance-app-tracker-bdd4a.web.app/",
+          githubLink: "https://github.com/patrick-hub/Finance-Tracker-App"
+            
           },
       ];
 

@@ -42,16 +42,16 @@ export default function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdatedLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdatedLink('skills') }>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdatedLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdatedLink('projects')}>Projects</Nav.Link>
           </Nav>
 
           <span className="navbar-text ">
               <div className="social-icon g-4">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={twitterLogo}  alt="" className="twitter-logo"/></a>
+                <a href="https://www.linkedin.com/in/patrick-akuagwu"><img src={navIcon1} alt="" /></a>
+                <a href="https://twitter.com/PAkuagwu"><img src={twitterLogo}  alt="" className="twitter-logo"/></a>
                 <a href="#"><img src={navIcon3}  alt="" /></a>
               </div>
-              <button className="connect-button" onClick={() => {}}><span>Let's Connect</span></button>
+              <button className="connect-button" onClick={() => {}}><a href="https://wa.me/+2348179169550">Let's Connect</a></button>
             </span>
         </Navbar.Collapse>
       </Container>

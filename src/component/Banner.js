@@ -14,7 +14,7 @@ export const Banner = () => {
                         <span className='tagline'>Hello, Welcome to my Portfolio</span>
                         <h1>I'm Patrick Akuagwu</h1>
                         <p>A Frontend Engineer</p>
-                        <button onClick={() => console.log('sumit')}>Let's Connect <ArrowRightCircle/></button>
+                        <button> <a href='https://wa.me/+2348179169550' style={{color:'#000', textDecoration: 'none'}}>Let's Connect</a> <ArrowRightCircle/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={profilePhoto} alt="header img" className='profile-photo' />
