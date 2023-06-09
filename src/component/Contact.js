@@ -13,31 +13,33 @@ export const Contact = () => {
     }
 
     const [formDetails, setFormDetails] = useState(formInitialDetails)
+    const [buttonText, setButtonText] = useState('Send')
+    const [status, setStatus] = useState({})
 
     const onFormUpdate = (category, value) => {
         setFormDetails({
             ...formDetails, [category]:value
         })
     }
-    // const handleSubmit = async(e) => {
-    //     e.preventDefault()
-    //     setButtonText('Sending...')
-    //     const response = await fetch("", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "Application/json;charset=utf-8"
-    //         },
-    //         body : JSON.stringify(formDetails),
-    //     })
-    //     setButtonText("Send")
-    //     let result = response.json()
-    //     setFormDetails(formInitialDetails)
-    //     if (result.code === 200) {
-    //         setStatus({success: true, message: 'Message sent successfully'})
-    //     } else {
-    //         setStatus({success: false, message: "Something went wrong. Please try again later"})
-    //     }
-    // }
+    const handleSubmit = async(e) => {
+        e.preventDefault()
+        setButtonText('Sending...')
+        const response = await fetch("", {
+            method: "POST",
+            headers: {
+                "Content-Type": "Application/json;charset=utf-8"
+            },
+            body : JSON.stringify(formDetails),
+        })
+        setButtonText("Send")
+        let result = response.json()
+        setFormDetails(formInitialDetails)
+        if (result.code === 200) {
+            setStatus({success: true, message: 'Message sent successfully'})
+        } else {
+            setStatus({success: false, message: "Something went wrong. Please try again later"})
+        }
+    }
 return (
     <section className="contact" id="connect">
         <Container>
@@ -47,7 +49,7 @@ return (
                 </Col>
                 <Col>
                 <h2>Get in Touch</h2>
-                <form action="">
+                <form onSubmit={handleSubmit}>
                     <Row>
                         <Col sm={6}>
                             <input type="text" value={formDetails.firstName}  placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
